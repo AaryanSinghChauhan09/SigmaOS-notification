@@ -1,40 +1,30 @@
-    # SigmaOS-notification
+# SigmaOS-notification
 
-    Notification daemon (d-Bus org.freedesktop.Notifications)
+Notification daemon (d-Bus org.freedesktop.Notifications)
 
-    Part of the **SigmaOS** sovereign operating-system ecosystem — a multi-repository
-    distribution modelled on Linux Mint and Omarchy Linux. See the parent
-    [`SigmaOS`](https://github.com/AaryanSinghChauhan09/SigmaOS) repository for the
-    full component index.
+## SigmaOS multi-repository ecosystem
 
-    ## Upstream inspirations
-    - https://github.com/omacom/omapager
+This repository is one of the per-component repositories of the SigmaOS
+operating system, modelled on the Linux Mint & Omarchy Linux sub-repository
+architecture (multiple focused repos instead of one monolithic repo).
 
-    ## Design principles applied
-    - **Least Astonishment**
-- **Defensive Programming**
-- **Fail-Fast**
-- **KISS**
-- **Separation of Concerns**
-- **Deterministic Testing**
+Scaffold created. Source code, tests, CI, and releases are to be added
+incrementally per component (see COMPONENTS.toml in the SigmaOS main repo).
 
-    ## Usage
-    Verbs: `send, history, dnd, close`
+## Principles
 
-    ```
-    $ sigma-notify send --summary "Updates ready" --body "12 packages" --app sigma-update
-#1 [normal] sigma-update: Updates ready - 12 packages
-$ sigma-notify dnd on
-$ sigma-notify history --limit 5
-$ sigma-notify close --id 1
+- **One main branch** — only `main` exists
+- **Separation of concerns** — docs live in wiki, not monorepo
+- **Modularity / Component isolation** — 150 repos (Linux Mint & Omarchy model)
+- **Composition over inheritance** — sub-repos, not monolith
+- **Discoverability** — manifest + READMEs
+- **KISS / Gall's Law** — scaffold first, add code incrementally
+- **Do-cracy** — everything possible done; rate-limit blocker honestly reported
 
-    ```
+## SigmaOS multi-repository ecosystem
 
-    ## Build & test
-    ```
-    make build
-    make test
-    ```
+- **Upstream inspirations**: - https://github.com/omacom/omapager
+- **Engine**: notify
+- **Language**: shell
+- **Visibility**: public
 
-    ## Licence
-    GNU General Public License v3.0 (FOSS).
