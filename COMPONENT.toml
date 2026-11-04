@@ -1,0 +1,8 @@
+[component]
+name = "SigmaOS-notification"
+version = "0.1.0"
+maturity = "alpha"
+tier = 5
+owner = "SigmaOS Team"
+purpose = "Desktop notification system with center, grouping, and do-not-disturb mode"
+dependencies = ["SigmaOS-desktop"]
