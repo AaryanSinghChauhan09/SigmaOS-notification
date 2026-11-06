@@ -10,7 +10,6 @@
 // - Desktop integration
 // - Grouped notifications
 
-#![no_std]
 
 extern crate alloc;
 use alloc::collections::BTreeMap;

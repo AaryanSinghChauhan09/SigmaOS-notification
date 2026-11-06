@@ -27,3 +27,8 @@ impl Component for NotificationComponent {
         else { Err(error::ComponentError::Service("notification service not running".to_string())) }
     }
 }
+
+pub mod file;
+pub mod notification_system;
+pub mod theme;
+pub mod window;
